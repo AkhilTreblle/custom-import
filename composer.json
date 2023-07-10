@@ -1,5 +1,5 @@
 {
-    "name": "akhil/csv-import",
+    "name": "akhil-treblle/csv-import",
     "description": "A fully-fledged CSV import tool for Laravel Nova.",
     "keywords": [
         "laravel",

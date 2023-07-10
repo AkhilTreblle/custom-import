@@ -1,6 +1,6 @@
 <?php
 
-namespace AkhilAkhilTreblle\CsvImport;
+namespace AkhilTreblle\CsvImport;
 
 use Illuminate\Contracts\Filesystem\Filesystem;
 use Illuminate\Support\Facades\Route;
@@ -9,9 +9,9 @@ use Illuminate\Support\ServiceProvider;
 use Laravel\Nova\Events\ServingNova;
 use Laravel\Nova\Nova;
 use Maatwebsite\Excel\Concerns\ToModel as ModelImporter;
-use AkhilAkhilTreblle\CsvImport\Http\Controllers\ImportController;
-use AkhilAkhilTreblle\CsvImport\Http\Controllers\UploadController;
-use AkhilAkhilTreblle\CsvImport\Http\Middleware\Authorize;
+use AkhilTreblle\CsvImport\Http\Controllers\ImportController;
+use AkhilTreblle\CsvImport\Http\Controllers\UploadController;
+use AkhilTreblle\CsvImport\Http\Middleware\Authorize;
 
 class ToolServiceProvider extends ServiceProvider
 {

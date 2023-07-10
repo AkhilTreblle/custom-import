@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'importer' => AkhilTreblle\CustomImport\Importer::class,
+    'importer' => AkhilTreblle\CsvImport\Importer::class,
 
     'disk' => null,
 ];

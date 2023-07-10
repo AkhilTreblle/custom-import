@@ -1,9 +1,9 @@
 <?php
 
-namespace AkhilTreblle\CustomImport\Http\Middleware;
+namespace AkhilTreblle\CsvImport\Http\Middleware;
 
 use Laravel\Nova\Nova;
-use AkhilTreblle\CustomImport\CustomImport;
+use AkhilTreblle\CsvImport\CsvImport;
 
 class Authorize
 {
@@ -29,6 +29,6 @@ class Authorize
      */
     public function matchesTool($tool)
     {
-        return $tool instanceof CustomImport;
+        return $tool instanceof CsvImport;
     }
 }

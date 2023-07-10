@@ -1,6 +1,6 @@
 <?php
 
-namespace AkhilTreblle\CustomImport\Contracts;
+namespace AkhilTreblle\CsvImport\Contracts;
 
 interface Modifier
 {

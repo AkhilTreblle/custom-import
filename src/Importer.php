@@ -1,6 +1,6 @@
 <?php
 
-namespace AkhilTreblle\CustomImport;
+namespace AkhilTreblle\CsvImport;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Str;
@@ -17,7 +17,7 @@ use Maatwebsite\Excel\Concerns\WithChunkReading;
 use Maatwebsite\Excel\Concerns\WithHeadingRow;
 use Maatwebsite\Excel\Concerns\WithMapping;
 use Maatwebsite\Excel\Concerns\WithValidation;
-use AkhilTreblle\CustomImport\Concerns\HasModifiers;
+use AkhilTreblle\CsvImport\Concerns\HasModifiers;
 
 class Importer implements ToModel, WithValidation, WithHeadingRow, WithMapping, WithBatchInserts, WithChunkReading, SkipsOnFailure, SkipsOnError, SkipsEmptyRows
 {

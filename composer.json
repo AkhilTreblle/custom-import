@@ -16,7 +16,7 @@
     },
     "autoload": {
         "psr-4": {
-            "AkhilTreblle\\CustomImport\\": "src/"
+            "AkhilTreblle\\CsvImport\\": "src/"
         }
     },
     "scripts": {
@@ -28,7 +28,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "AkhilTreblle\\CustomImport\\ToolServiceProvider"
+                "AkhilTreblle\\CsvImport\\ToolServiceProvider"
             ]
         }
     },

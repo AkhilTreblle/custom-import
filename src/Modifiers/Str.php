@@ -1,9 +1,9 @@
 <?php
 
-namespace AkhilTreblle\CustomImport\Modifiers;
+namespace AkhilTreblle\CsvImport\Modifiers;
 
 use Illuminate\Support\Str as LaravelStr;
-use AkhilTreblle\CustomImport\Contracts\Modifier;
+use AkhilTreblle\CsvImport\Contracts\Modifier;
 
 class Str implements Modifier
 {

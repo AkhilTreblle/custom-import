@@ -1,9 +1,9 @@
 <?php
 
-namespace AkhilTreblle\CustomImport\Modifiers;
+namespace AkhilTreblle\CsvImport\Modifiers;
 
 use PhpOffice\PhpSpreadsheet\Shared\Date;
-use AkhilTreblle\CustomImport\Contracts\Modifier;
+use AkhilTreblle\CsvImport\Contracts\Modifier;
 
 class ExcelDate implements Modifier
 {

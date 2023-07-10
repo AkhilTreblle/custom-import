@@ -1,17 +1,17 @@
 <?php
 
-namespace AkhilTreblle\CustomImport\Concerns;
+namespace AkhilTreblle\CsvImport\Concerns;
 
 use Illuminate\Support\Arr;
 use Illuminate\Support\Str;
-use AkhilTreblle\CustomImport\Contracts\Modifier;
-use AkhilTreblle\CustomImport\Modifiers\Boolean;
-use AkhilTreblle\CustomImport\Modifiers\DefaultValue;
-use AkhilTreblle\CustomImport\Modifiers\ExcelDate;
-use AkhilTreblle\CustomImport\Modifiers\Hash;
-use AkhilTreblle\CustomImport\Modifiers\Prefix;
-use AkhilTreblle\CustomImport\Modifiers\Str as StrModifier;
-use AkhilTreblle\CustomImport\Modifiers\Suffix;
+use AkhilTreblle\CsvImport\Contracts\Modifier;
+use AkhilTreblle\CsvImport\Modifiers\Boolean;
+use AkhilTreblle\CsvImport\Modifiers\DefaultValue;
+use AkhilTreblle\CsvImport\Modifiers\ExcelDate;
+use AkhilTreblle\CsvImport\Modifiers\Hash;
+use AkhilTreblle\CsvImport\Modifiers\Prefix;
+use AkhilTreblle\CsvImport\Modifiers\Str as StrModifier;
+use AkhilTreblle\CsvImport\Modifiers\Suffix;
 
 trait HasModifiers
 {

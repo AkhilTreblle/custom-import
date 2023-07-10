@@ -1,13 +1,13 @@
 <?php
 
-namespace AkhilTreblle\CustomImport;
+namespace AkhilTreblle\CsvImport;
 
 use Illuminate\Http\Request;
 use Laravel\Nova\Menu\MenuSection;
 use Laravel\Nova\Nova;
 use Laravel\Nova\Tool;
 
-class CustomImport extends Tool
+class CsvImport extends Tool
 {
     /**
      * Perform any tasks that need to happen when the tool is booted.

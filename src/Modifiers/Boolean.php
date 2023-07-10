@@ -1,8 +1,8 @@
 <?php
 
-namespace AkhilTreblle\CustomImport\Modifiers;
+namespace AkhilTreblle\CsvImport\Modifiers;
 
-use AkhilTreblle\CustomImport\Contracts\Modifier;
+use AkhilTreblle\CsvImport\Contracts\Modifier;
 
 class Boolean implements Modifier
 {

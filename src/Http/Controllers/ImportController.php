@@ -1,6 +1,6 @@
 <?php
 
-namespace AkhilTreblle\CustomImport\Http\Controllers;
+namespace AkhilTreblle\CsvImport\Http\Controllers;
 
 use Illuminate\Contracts\Filesystem\Filesystem;
 use Illuminate\Support\Collection;

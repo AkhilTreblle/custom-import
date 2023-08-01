@@ -249,7 +249,7 @@ __webpack_require__.r(__webpack_exports__);
       Nova.request().post(this.url('import'), data).then(function (response) {
         if (response.status === 200) {
           Nova.success('Importing...');
-          Nova.visit('/resources/clients');
+          Nova.visit('/resources/' + _this.resource);
         }
       })["catch"](function (e) {
         _this.importing = false;

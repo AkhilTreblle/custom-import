@@ -56,11 +56,10 @@ class ImportController
 
         $mods = $this->importer->getAvailableModifiers();
 
-        $resource = 'clients';
 
         return inertia(
             'CsvImport/Configure',
-            compact('file', 'file_name', 'resources', 'fields', 'rows', 'total_rows', 'headings', 'config', 'mods','resource')
+            compact('file', 'file_name', 'resources', 'fields', 'rows', 'total_rows', 'headings', 'config', 'mods')
         );
     }
 

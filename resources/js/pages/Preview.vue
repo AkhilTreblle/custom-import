@@ -89,6 +89,7 @@ export default {
                 .then((response) => {
                     if (response.status === 200) {
                         Nova.success('Importing...');
+                        
                         Nova.visit('/resources/' + this.resource);
                     }
                 })

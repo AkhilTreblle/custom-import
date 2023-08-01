@@ -19,9 +19,6 @@
         <hr>
   
         <div class="overflow-scroll">
-          <div id="app" data-resource="{{ config('custom.resource_name', 'clients') }}">
-  
-        </div>
           <table cellpadding="10">
             <thead class="border-b">
               <tr>
@@ -41,7 +38,19 @@
           </table>
         </div>
       </card>
-  
+      <card class="p-8 space-y-4 mb-8">
+            <p>
+                Choose a resource to import this data into.
+            </p>
+
+            <div class="inline-flex items-center">
+                <b>Resource:</b>
+                <SelectControl @change="(value) => resource = value" :selected="resource" class="ml-4">
+                    <option value="">- Select a resource -</option>
+                    <option v-for="(label, index) in resources" :value="index">{{ label }}</option>
+                </SelectControl>
+            </div>
+        </card>
       <card class="p-8 space-y-4">
         <template v-if="resource">
           <table cellpadding="10">
@@ -93,7 +102,7 @@
   
     data() {
       return {
-        resource:this.$el.dataset.resource,
+        resource: this.config?.resource || '',
         mappings: this.config?.mappings || {},
         values: this.config?.values || {},
         modifiers: this.config?.modifiers || {},

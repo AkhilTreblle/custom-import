@@ -19,6 +19,9 @@
         <hr>
   
         <div class="overflow-scroll">
+          <div id="app" data-resource="{{ config('custom.resource_name', 'clients') }}">
+  
+        </div>
           <table cellpadding="10">
             <thead class="border-b">
               <tr>
@@ -90,7 +93,7 @@
   
     data() {
       return {
-        resource: 'clients',
+        resource: this.$el.dataset.resource,
         mappings: this.config?.mappings || {},
         values: this.config?.values || {},
         modifiers: this.config?.modifiers || {},

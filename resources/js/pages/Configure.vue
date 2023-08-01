@@ -93,7 +93,7 @@
   
     data() {
       return {
-        resource: this.$el.dataset.resource,
+        resource:this.$el.dataset.resource,
         mappings: this.config?.mappings || {},
         values: this.config?.values || {},
         modifiers: this.config?.modifiers || {},
